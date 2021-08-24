@@ -34,6 +34,9 @@
                         <constraint firstAttribute="width" secondItem="zW1-bK-bnL" secondAttribute="height" multiplier="1:1" id="oHA-IA-FyK"/>
                     </constraints>
                     <state key="normal" image="unnamed (4)"/>
+                    <connections>
+                        <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="q5p-Tf-LBM"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

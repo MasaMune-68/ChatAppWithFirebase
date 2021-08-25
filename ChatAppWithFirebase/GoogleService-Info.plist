@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>722589700204-e4otmcb2pndlprc9bl7eobpfi7vmoii0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.722589700204-e4otmcb2pndlprc9bl7eobpfi7vmoii0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMAEorvcT9Ujuw_gBzCqfmVdj6pAyZqho</string>
+	<key>GCM_SENDER_ID</key>
+	<string>722589700204</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MuNe.ChatAppWithFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>chatwithfirebaseapp-abfc8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatwithfirebaseapp-abfc8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:722589700204:ios:6a03cc39c9731b43e0c849</string>
+</dict>
+</plist>

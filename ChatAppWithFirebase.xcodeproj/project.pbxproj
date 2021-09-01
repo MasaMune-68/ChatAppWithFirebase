@@ -24,6 +24,8 @@
 		0629276526DC056800DF924B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629276426DC056800DF924B /* SignUp.storyboard */; };
 		0629276726DC08E400DF924B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629276626DC08E400DF924B /* SignUpViewController.swift */; };
 		0647337D26DF7932009AED35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647337C26DF7932009AED35 /* User.swift */; };
+		0675597226E0048000977AF6 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0675597126E0048000977AF6 /* UserList.storyboard */; };
+		0675597426E0056000977AF6 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0675597326E0056000977AF6 /* UserListViewController.swift */; };
 		5BF4EEE55BC583BB95F80D64 /* Pods_ChatAppWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17561A07E48E53D8C2C8DF0A /* Pods_ChatAppWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		0629276426DC056800DF924B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		0629276626DC08E400DF924B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0647337C26DF7932009AED35 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0675597126E0048000977AF6 /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
+		0675597326E0056000977AF6 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		17561A07E48E53D8C2C8DF0A /* Pods_ChatAppWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A82804DF2EEF04139FE364D /* Pods-ChatAppWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppWithFirebase.release.xcconfig"; path = "Target Support Files/Pods-ChatAppWithFirebase/Pods-ChatAppWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		AE48A470AA21B943CD15CFA9 /* Pods-ChatAppWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppWithFirebase.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppWithFirebase/Pods-ChatAppWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				060A82B926D3DBC3005A972B /* ChatListViewController.swift */,
 				060A82C126D3F160005A972B /* ChatRoomViewController.swift */,
 				0629276626DC08E400DF924B /* SignUpViewController.swift */,
+				0675597326E0056000977AF6 /* UserListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				060A82B726D3DB04005A972B /* ChatList.storyboard */,
 				060A82BF26D3F103005A972B /* ChatRoom.storyboard */,
 				0629276426DC056800DF924B /* SignUp.storyboard */,
+				0675597126E0048000977AF6 /* UserList.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0675597226E0048000977AF6 /* UserList.storyboard in Resources */,
 				060A82C426D3F56E005A972B /* ChatRoomTableViewCell.xib in Resources */,
 				0629276126DC023E00DF924B /* GoogleService-Info.plist in Resources */,
 				060A82B026D3DAA9005A972B /* LaunchScreen.storyboard in Resources */,
@@ -296,6 +303,7 @@
 				0629276726DC08E400DF924B /* SignUpViewController.swift in Sources */,
 				060A82BE26D3EDDD005A972B /* UIColor-Extension.swift in Sources */,
 				060A82C226D3F160005A972B /* ChatRoomViewController.swift in Sources */,
+				0675597426E0056000977AF6 /* UserListViewController.swift in Sources */,
 				0647337D26DF7932009AED35 /* User.swift in Sources */,
 				060A82BA26D3DBC3005A972B /* ChatListViewController.swift in Sources */,
 				060A82C626D3F725005A972B /* ChatRoomTableViewCell.swift in Sources */,

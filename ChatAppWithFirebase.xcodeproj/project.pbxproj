@@ -20,6 +20,7 @@
 		060A82C626D3F725005A972B /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A82C526D3F725005A972B /* ChatRoomTableViewCell.swift */; };
 		060A82CB26D412E9005A972B /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 060A82CA26D412E9005A972B /* ChatInputAccessoryView.xib */; };
 		060A82CD26D41439005A972B /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A82CC26D41439005A972B /* ChatInputAccessoryView.swift */; };
+		061934E126E29B99001D74D8 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061934E026E29B99001D74D8 /* ChatRoom.swift */; };
 		0629276126DC023E00DF924B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0629276026DC023E00DF924B /* GoogleService-Info.plist */; };
 		0629276526DC056800DF924B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629276426DC056800DF924B /* SignUp.storyboard */; };
 		0629276726DC08E400DF924B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629276626DC08E400DF924B /* SignUpViewController.swift */; };
@@ -45,6 +46,7 @@
 		060A82C526D3F725005A972B /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		060A82CA26D412E9005A972B /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		060A82CC26D41439005A972B /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
+		061934E026E29B99001D74D8 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		0629276026DC023E00DF924B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0629276426DC056800DF924B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		0629276626DC08E400DF924B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0647337C26DF7932009AED35 /* User.swift */,
+				061934E026E29B99001D74D8 /* ChatRoom.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				060A82BA26D3DBC3005A972B /* ChatListViewController.swift in Sources */,
 				060A82C626D3F725005A972B /* ChatRoomTableViewCell.swift in Sources */,
 				060A82A626D3DAA8005A972B /* SceneDelegate.swift in Sources */,
+				061934E126E29B99001D74D8 /* ChatRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="メッセージが入ります" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-s9-mFz">
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージが入ります" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-s9-mFz">
                         <rect key="frame" x="230" y="25" width="250" height="103"/>
                         <color key="backgroundColor" red="0.60392156862745094" green="0.8784313725490196" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

@@ -6,6 +6,7 @@ class ChatListViewController: UIViewController {
     
     private let cellId = "cellId"
     private var chatrooms = [ChatRoom]()
+    private var chatRoomListener: ListenerRegistration?
     
     private var user: User? {
         didSet {
@@ -20,13 +21,23 @@ class ChatListViewController: UIViewController {
         
         setupViews()
         confirmLoggedInUser()
-        fetchLoginUserInfo()
         fetchChatroomsInfoFromFirestore()
         
     }
     
-    private func fetchChatroomsInfoFromFirestore() {
-        Firestore.firestore().collection("chatRooms")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchLoginUserInfo()
+    }
+    
+    func fetchChatroomsInfoFromFirestore() {
+        
+        chatRoomListener?.remove()
+        chatrooms.removeAll()
+        chatListTableView.reloadData()
+        
+        chatRoomListener = Firestore.firestore().collection("chatRooms")
             .addSnapshotListener{ (snapshots, err) in
                 
                 if let err = err {
@@ -111,26 +122,42 @@ class ChatListViewController: UIViewController {
             
             navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
             navigationItem.title = "トーク"
-            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-            
-            let rigntBarButton = UIBarButtonItem(title: "新規チャット", style: .plain, target: self, action: #selector(tappedNavRightBarButton))
-            navigationItem.rightBarButtonItem = rigntBarButton
-            navigationItem.rightBarButtonItem?.tintColor = .white
-            
-        }
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
-        private func confirmLoggedInUser() {
-            
+        let rigntBarButton = UIBarButtonItem(title: "新規チャット", style: .plain, target: self, action: #selector(tappedNavRightBarButton))
+        let logoutBarButton = UIBarButtonItem(title: "ログアウト", style: .plain, target: self, action: #selector(tappedLogoutButton))
+        navigationItem.rightBarButtonItem = rigntBarButton
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationItem.leftBarButtonItem = logoutBarButton
+        navigationItem.leftBarButtonItem?.tintColor = .white
+        
+    }
+    
+    @objc private func tappedLogoutButton() {
+        do {
+            try Auth.auth().signOut()
+            pushLoginViewController()
+        } catch {
+            print("ログアウトに失敗しました。 \(error)")
+        }
+    }
+    
+    private func confirmLoggedInUser() {
+        
             if Auth.auth().currentUser?.uid == nil {
-                
-                let storyboar = UIStoryboard(name: "SignUp", bundle: nil)
-                let signUpViewController = storyboar.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
-                signUpViewController.modalPresentationStyle = .fullScreen
-                self.present(signUpViewController, animated: true, completion: nil)
-                
+                pushLoginViewController()
             }
             
         }
+    
+    private func pushLoginViewController() {
+        let storyboar = UIStoryboard(name: "SignUp", bundle: nil)
+        let signUpViewController = storyboar.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        let nav = UINavigationController(rootViewController: signUpViewController)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
+        
+    }
         
         @objc private func tappedNavRightBarButton() {
             let storyboard = UIStoryboard.init(name: "UserList", bundle: nil)

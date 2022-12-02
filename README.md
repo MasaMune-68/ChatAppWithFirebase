@@ -5,7 +5,8 @@ Swift、Firebaseを使用して開発しました。複数の端末でオンラ�
 # DEMO
  
 ![ezgif-3-67e2497ac9](https://user-images.githubusercontent.com/74311952/205261531-71bd23bf-3416-4b49-8422-47697804343a.gif)
-![ezgif-3-5238cc0d57](https://user-images.githubusercontent.com/74311952/205262933-6733982a-3910-4735-a78d-267fab7041b1.gif)
+![ezgif-3-f224aed4eb](https://user-images.githubusercontent.com/74311952/205264388-538b5502-400a-4082-b31d-d6960480da47.gif)
+
  
 # Features
  

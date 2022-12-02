@@ -1,12 +1,11 @@
-# Name
- 
-LINE風チャットアプリ
+# LINE風チャットアプリ
  
 Swift、Firebaseを使用して開発しました。複数の端末でオンラインチャットを行うことができます。
  
 # DEMO
  
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+![ezgif-3-67e2497ac9](https://user-images.githubusercontent.com/74311952/205261531-71bd23bf-3416-4b49-8422-47697804343a.gif)
+![ezgif-3-5238cc0d57](https://user-images.githubusercontent.com/74311952/205262933-6733982a-3910-4735-a78d-267fab7041b1.gif)
  
 # Features
  
